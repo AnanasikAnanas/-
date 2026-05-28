@@ -1,0 +1,137 @@
+import {
+  Sparkles,
+  HeartPulse,
+  Droplets,
+  Gem,
+  Scissors,
+  CalendarDays,
+  User,
+  ShieldCheck,
+  Settings,
+  Clock,
+  Megaphone,
+  Building2,
+} from "lucide-react";
+
+export const navItems = [
+  { id: "home", label: "Главная" },
+  { id: "masters", label: "Мастера" },
+  { id: "services", label: "Услуги" },
+  { id: "salons", label: "Салоны" },
+  { id: "cabinet", label: "Личный кабинет" },
+];
+
+export const services = [
+  { id: 1, name: "Массаж классический", category: "Массаж", price: 1500, duration: 60, masters: 8, icon: Sparkles },
+  { id: 2, name: "Массаж аппаратный", category: "Массаж", price: 2000, duration: 60, masters: 5, icon: HeartPulse },
+  { id: 3, name: "Педикюр", category: "Педикюр", price: 1800, duration: 90, masters: 6, icon: Droplets },
+  { id: 4, name: "Ресницы", category: "Ресницы", price: 2200, duration: 120, masters: 4, icon: Gem },
+  { id: 5, name: "Брови", category: "Брови", price: 900, duration: 45, masters: 7, icon: Scissors },
+  { id: 6, name: "Уход за лицом", category: "Лицо", price: 2500, duration: 75, masters: 3, icon: Sparkles },
+];
+
+export const categories = [
+  { title: "Массаж", icon: Sparkles },
+  { title: "Педикюр", icon: Droplets },
+  { title: "Ресницы", icon: Gem },
+  { title: "Брови", icon: Scissors },
+  { title: "Уход за лицом", icon: HeartPulse },
+  { title: "Стрижка", icon: Scissors },
+  { title: "Окрашивание", icon: Sparkles },
+  { title: "Макияж", icon: Gem },
+];
+
+export const salons = [
+  {
+    id: 1,
+    name: "Beauty Space",
+    city: "Тольятти",
+    address: "ул. Мира, 24",
+    rating: 4.9,
+    reviews: 128,
+    isTop: true,
+    image: "https://images.unsplash.com/photo-1633681926035-ec1ac984418a?auto=format&fit=crop&w=900&q=80",
+  },
+  {
+    id: 2,
+    name: "Cosmo Studio",
+    city: "Самара",
+    address: "пр-т Ленина, 18",
+    rating: 4.8,
+    reviews: 92,
+    isTop: true,
+    image: "https://images.unsplash.com/photo-1600948836101-f9ffda59d250?auto=format&fit=crop&w=900&q=80",
+  },
+  {
+    id: 3,
+    name: "Skin Lab",
+    city: "Тольятти",
+    address: "ул. Спортивная, 7",
+    rating: 4.7,
+    reviews: 57,
+    isTop: false,
+    image: "https://images.unsplash.com/photo-1596178065887-1198b6148b2b?auto=format&fit=crop&w=900&q=80",
+  },
+];
+
+export const masters = [
+  {
+    id: 1,
+    name: "Алина Демина",
+    role: "Косметолог",
+    salon: "Beauty Space",
+    city: "Тольятти",
+    rating: 4.9,
+    reviews: 64,
+    price: 1500,
+    isTop: true,
+    tags: ["Массаж", "Лицо", "Брови"],
+    education: "Медицинский колледж, курсы косметологии",
+    certificate: "Сертификат специалиста",
+    about: "Опыт работы 5 лет. Подбирает процедуры под состояние кожи и пожелания клиента.",
+    image: "https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=600&q=80",
+  },
+  {
+    id: 2,
+    name: "Мария Смирнова",
+    role: "Мастер ногтевого сервиса",
+    salon: "Cosmo Studio",
+    city: "Самара",
+    rating: 4.8,
+    reviews: 48,
+    price: 1800,
+    isTop: true,
+    tags: ["Педикюр", "Брови"],
+    education: "Профильные курсы",
+    certificate: "Диплом мастера",
+    about: "Работает с современными материалами и стерильным инструментом.",
+    image: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=600&q=80",
+  },
+  {
+    id: 3,
+    name: "Екатерина Волкова",
+    role: "Лэшмейкер",
+    salon: "Skin Lab",
+    city: "Тольятти",
+    rating: 4.7,
+    reviews: 35,
+    price: 2200,
+    isTop: false,
+    tags: ["Ресницы", "Брови"],
+    education: "Школа красоты PRO",
+    certificate: "Сертификаты по наращиванию",
+    about: "Специализируется на естественных эффектах и комфортной посадке ресниц.",
+    image: "https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=600&q=80",
+  },
+];
+
+export const cabinetMenu = [
+  { id: "appointments", label: "Мои записи", icon: CalendarDays },
+  { id: "profile", label: "Профиль", icon: User },
+  { id: "education", label: "Образование и сертификаты", icon: ShieldCheck },
+  { id: "security", label: "Безопасность", icon: Settings },
+  { id: "schedule", label: "График работы", icon: Clock },
+  { id: "services", label: "Услуги", icon: Sparkles },
+  { id: "ads", label: "Реклама", icon: Megaphone },
+  { id: "salon", label: "Кабинет салона", icon: Building2 },
+];
